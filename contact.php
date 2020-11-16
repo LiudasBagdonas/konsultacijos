@@ -27,7 +27,7 @@ $form_visibility = 'flex';
     </article>
 </header>
 <main>
-    <?php if (isset($_POST['submit'])): ?>
+    <?php if (isset($_POST['submit']) && !empty($_POST['message'])): ?>
         <?php $form_visibility = 'none'; ?>
         <span class="insult">Niekam nerupi tavo nuomone.</span>
     <?php endif; ?>
