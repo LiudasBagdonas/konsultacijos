@@ -24,6 +24,9 @@ $team2 = generate_team();
                     <a href="teams.php">Teams</a>
                 </li>
                 <li>
+                    <a href="statistics.php">Statistics</a>
+                </li>
+                <li>
                     <a href="contact.php">Contact Us</a>
                 </li>
             </ul>

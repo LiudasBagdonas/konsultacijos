@@ -20,6 +20,9 @@ $form_visibility = 'flex';
                     <a href="teams.php">Teams</a>
                 </li>
                 <li>
+                    <a href="statistics.php">Statistics</a>
+                </li>
+                <li>
                     <a href="contact.php">Contact Us</a>
                 </li>
             </ul>
@@ -27,19 +30,21 @@ $form_visibility = 'flex';
     </article>
 </header>
 <main>
-    <?php if (isset($_POST['submit']) && !empty($_POST['message'])): ?>
-        <?php $form_visibility = 'none'; ?>
-        <span class="insult">Niekam nerupi tavo nuomone.</span>
-    <?php endif; ?>
-    <form method="POST" style="display: <?php print $form_visibility ;?>">
-        <label for="name">Vardas:</label>
-        <input name="name" type="text">
-        <label for="email">El. Pastas:</label>
-        <input name="email" type="email">
-        <label for="">Zinute</label>
-        <textarea name="message"></textarea>
-        <button name="submit" type="submit">Siusti</button>
-    </form>
+    <article class="contacts_main">
+        <?php if (isset($_POST['submit']) && !empty($_POST['message'])): ?>
+            <?php $form_visibility = 'none'; ?>
+            <span class="insult">Niekam nerupi tavo nuomone.</span>
+        <?php endif; ?>
+        <form method="POST" style="display: <?php print $form_visibility ;?>">
+            <label for="name">Vardas:</label>
+            <input name="name" type="text">
+            <label for="email">El. Pastas:</label>
+            <input name="email" type="email">
+            <label for="">Zinute</label>
+            <textarea name="message"></textarea>
+            <button name="submit" type="submit">Siusti</button>
+        </form>
+    </article>
 </main>
 </body>
 </html>

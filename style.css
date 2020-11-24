@@ -193,7 +193,7 @@ ul {
 }
 
 /*Contact*/
-main {
+.contacts_main {
     display: flex;
     align-items: center;
 }
@@ -223,4 +223,19 @@ label {
     font-size: 20px;
     font-weight: bold;
     margin-top: 100px;
+}
+
+.teams_info {
+    display: flex;
+}
+.matches_info {
+    text-align: center;
+}
+.matches_info span {
+    font-size: 20px;
+}
+.points_chart_match_box {
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
 }

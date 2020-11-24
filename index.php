@@ -1,13 +1,7 @@
 <?php
 require_once 'functions/constants.php';
 require_once 'functions/functions.php';
-//var_dump(rand_name(NAMES));
-//var_dump(generate_player(NAMES, SURNAMES, POSITION_TYPES));
-//var_dump(generate_team());
-//var_dump(generate_rand_num_arr(50));
-//var_dump(generate_rand_date('2000-12-10', '2020-12-10'));
-//var_dump(generate_rand_time());
-//var_dump(generate_score());
+
 $match_info = generate_match();
 $detail = $match_info['location']. ', ' .$match_info['date']. ', '.$match_info['time'];
 ?>
@@ -28,6 +22,9 @@ $detail = $match_info['location']. ', ' .$match_info['date']. ', '.$match_info['
             <ul class="menu-right">
                 <li>
                     <a href="teams.php">Teams</a>
+                </li>
+                <li>
+                    <a href="statistics.php">Statistics</a>
                 </li>
                 <li>
                     <a href="contact.php">Contact Us</a>
