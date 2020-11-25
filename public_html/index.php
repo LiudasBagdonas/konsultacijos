@@ -23,7 +23,7 @@ $nav = nav();
     <h1><?php print $h1; ?></h1>
     <!-- Place for products grid -->
     <?php if (isset($db_data['items'])): ?>
-        <h3>My items: <?php print $items_count; ?></h3>
+        <h3>Items list: <?php print $items_count; ?></h3>
         <article class="items_box">
             <?php foreach ($db_data['items'] as $item): ?>
                 <section class="item_box">
