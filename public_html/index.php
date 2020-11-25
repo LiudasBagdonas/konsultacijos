@@ -3,11 +3,8 @@
 require '../bootloader.php';
 
 $db_data = file_to_array(DB_FILE);
-$items_count = 0;
 
-if (isset($db_data['items'])) {
-    $items_count = count($db_data['items']);
-}
+$items_count = isset($db_data['items']) ? count($db_data['items']) : 0;
 
 $h1 = 'Welcome to Pet Shop';
 $nav = nav();

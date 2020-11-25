@@ -47,3 +47,15 @@ function nav()
         return $nav;
     }
 }
+
+function count_my_items() {
+    $db_data = file_to_array(DB_FILE);
+    $count = 0;
+
+    foreach($db_data['items'] as $item) {
+        if(isset($item['id']) && $item['id'] === $_SESSION['email']) {
+            $count ++;
+        }
+    }
+    return $count;
+}

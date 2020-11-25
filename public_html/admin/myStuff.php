@@ -5,12 +5,8 @@ require '../../bootloader.php';
 $db_data = file_to_array(DB_FILE);
 
 $h1 = 'My items';
-$my_items_count = 0;
-foreach($db_data['items'] as $item) {
-    if(isset($item['id']) && $item['id'] === $_SESSION['email']) {
-        $my_items_count ++;
-    }
-}
+$my_items_count = count_my_items();
+
 
 $nav = nav();
 ?>
