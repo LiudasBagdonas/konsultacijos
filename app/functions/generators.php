@@ -13,9 +13,14 @@ function nav()
                     'value' => 'Add Item',
                     'path' => '/admin/add.php'
                 ],
+                'myStuff' => [
+                    'value' => 'My Stuff',
+                    'path' => '/admin/myStuff.php'
+                ],
                 'logout' => [
                     'value' => 'Log Out',
-                    'path' => '/logout.php'
+                    'path' => '/logout.php',
+                    'user' => $_SESSION['user']
                 ],
             ],
         ];

@@ -140,3 +140,27 @@ function validate_number(string $field_value, array &$field): bool
     return false;
 }
 
+/**Function chack if password is 6 characters or longer
+ * @param string $field_value
+ * @param array $field
+ * @return bool
+ */
+function validate_min_6_chars(string $field_value, array &$field): bool
+{
+    if (strlen($field_value) >= 6) {
+        return true;
+    }
+    $field['error'] = 'Password must be at least 6 characters long.';
+
+    return false;
+}
+
+function validate_has_number(string $field_value, array &$field): bool
+{
+    if (preg_match('~[0-9]+~', $field_value)) {
+return true;
+    }
+    $field['error'] = 'Username must consist at least 1 number';
+
+    return false;
+}

@@ -51,6 +51,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 nav ul {
     display: flex;
@@ -66,7 +67,11 @@ nav a {
 nav a:hover {
     color: orange;
 }
-
+.loged_user {
+    color: grey;
+    position: absolute;
+     right: 20px;
+}
 /*------------------------------------*\
   # Forms, input fields
 \*------------------------------------*/
@@ -131,7 +136,7 @@ textarea.input-field {
     margin-top: 20px;
 }
 .item_box {
-    width: calc(33% - 40px);
+    width: calc(25% - 40px);
     height: 350px;
     padding: 20px;
     overflow: hidden;

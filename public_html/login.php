@@ -68,7 +68,15 @@ if ($clean_inputs) {
         $_SESSION['email'] = $clean_inputs['email'];
         $_SESSION['password'] = $clean_inputs['password'];
 
-        header('Location: /admin/add.php');
+        $input_from_json = file_to_array(DB_FILE);
+
+        foreach ($input_from_json['credentials'] as $user) {
+            if ($_SESSION['email'] === $user['email']) {
+                $_SESSION['user'] = $user['username'];
+            }
+        }
+
+        header('Location: /index.php');
     }
 }
 

@@ -13,6 +13,21 @@ $form = [
         'method' => 'POST',
     ],
     'fields' => [
+        'username' => [
+            'label' => 'Username',
+            'type' => 'text',
+            'validators' => [
+                'validate_field_not_empty',
+                'validate_user_unique',
+                'validate_has_number'
+            ],
+            'extra' => [
+                'attr' => [
+                    'placeholder' => 'Username...',
+                    'class' => 'input-field',
+                ]
+            ]
+        ],
         'email' => [
             'label' => 'Email',
             'type' => 'text',
@@ -33,6 +48,7 @@ $form = [
             'type' => 'text',
             'validators' => [
                 'validate_field_not_empty',
+                'validate_min_6_chars'
             ],
             'extra' => [
                 'attr' => [
@@ -46,6 +62,7 @@ $form = [
             'type' => 'text',
             'validators' => [
                 'validate_field_not_empty',
+                'validate_min_6_chars'
             ],
             'extra' => [
                 'attr' => [
@@ -83,11 +100,11 @@ if ($clean_inputs) {
         unset($clean_inputs['password_repeat']);
 
         // Get data from file
-        $input_from_json = file_to_array(ROOT . '/app/data/db.json');
+        $input_from_json = file_to_array(DB_FILE);
         // Append new data from form
         $input_from_json['credentials'][] = $clean_inputs;
         // Save old data together with appended data back to file
-        array_to_file($input_from_json, ROOT . '/app/data/db.json');
+        array_to_file($input_from_json, DB_FILE);
 
         header('Location: /login.php');
         $text_output = 'Sveikinu užsiregistravus';

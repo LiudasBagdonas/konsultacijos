@@ -89,14 +89,16 @@ if ($clean_inputs) {
 
     if ($is_valid) {
 
+        $card_id = [
+                'id' => $_SESSION['email']
+        ];
         // Get data from file
-        $input_from_json = file_to_array(ROOT . '/app/data/db.json');
+        $input_from_json = file_to_array(DB_FILE);
         // Append new data from form
-        $input_from_json['items'][] = $clean_inputs;
+        $input_from_json['items'][] = $clean_inputs + $card_id;
+//        $input_from_json['items'][]['id'] = $_SESSION['email'];
         // Save old data together with appended data back to file
-        array_to_file($input_from_json, ROOT . '/app/data/db.json');
-
-//        header('Location: /index.php');
+        array_to_file($input_from_json, DB_FILE);
 
     }
 
