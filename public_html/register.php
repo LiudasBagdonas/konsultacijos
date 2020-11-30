@@ -13,17 +13,28 @@ $form = [
         'method' => 'POST',
     ],
     'fields' => [
-        'username' => [
-            'label' => 'Username',
+        'name' => [
+            'label' => 'Name',
             'type' => 'text',
             'validators' => [
-                'validate_field_not_empty',
-                'validate_user_unique',
-                'validate_has_number'
+                'validate_has_no_number'
             ],
             'extra' => [
                 'attr' => [
-                    'placeholder' => 'Username...',
+                    'placeholder' => 'Your name...',
+                    'class' => 'input-field',
+                ]
+            ]
+        ],
+        'surname' => [
+            'label' => 'Surname',
+            'type' => 'text',
+            'validators' => [
+                'validate_has_no_number'
+            ],
+            'extra' => [
+                'attr' => [
+                    'placeholder' => 'Your surname...',
                     'class' => 'input-field',
                 ]
             ]
@@ -38,17 +49,45 @@ $form = [
             ],
             'extra' => [
                 'attr' => [
-                    'placeholder' => 'Įvesk emailą',
+                    'placeholder' => 'Your email...',
+                    'class' => 'input-field',
+                ]
+            ]
+        ],
+        'address' => [
+            'label' => 'Address',
+            'type' => 'text',
+            'validators' => [
+                'validate_field_not_empty'
+            ],
+            'extra' => [
+                'attr' => [
+                    'placeholder' => 'Your address...',
+                    'class' => 'input-field',
+                ]
+            ]
+        ],
+        'number' => [
+            'label' => 'Phone number',
+            'type' => 'text',
+            'validators' => [
+                'validate_field_not_empty',
+                'validate_number'
+            ],
+            'extra' => [
+                'attr' => [
+                    'placeholder' => 'Phone number...',
                     'class' => 'input-field',
                 ]
             ]
         ],
         'password' => [
             'label' => 'Password',
-            'type' => 'text',
+            'type' => 'password',
             'validators' => [
                 'validate_field_not_empty',
-                'validate_min_6_chars'
+                'validate_max_4_chars',
+                'validate_has_number'
             ],
             'extra' => [
                 'attr' => [
@@ -59,10 +98,11 @@ $form = [
         ],
         'password_repeat' => [
             'label' => 'Password repeat',
-            'type' => 'text',
+            'type' => 'password',
             'validators' => [
                 'validate_field_not_empty',
-                'validate_min_6_chars'
+                'validate_max_4_chars',
+                'validate_has_number'
             ],
             'extra' => [
                 'attr' => [
@@ -98,19 +138,17 @@ if ($clean_inputs) {
 
     if ($is_valid) {
         unset($clean_inputs['password_repeat']);
+        $buy_history = ['buy_history' => [], 'user_selected' => []];
 
         // Get data from file
         $input_from_json = file_to_array(DB_FILE);
         // Append new data from form
-        $input_from_json['credentials'][] = $clean_inputs;
+        $input_from_json['credentials'][] = $clean_inputs + $buy_history;
         // Save old data together with appended data back to file
         array_to_file($input_from_json, DB_FILE);
 
         header('Location: /login.php');
-        $text_output = 'Sveikinu užsiregistravus';
 
-    } else {
-        $text_output = 'Registracija nesekminga';
     }
 }
 
@@ -126,12 +164,11 @@ if ($clean_inputs) {
 </head>
 <body>
 <header>
-    <?php require ROOT . './app/templates/nav.php';?>
+    <?php require ROOT . './app/templates/nav.php'; ?>
 </header>
 <main>
     <h2>Registruokis</h2>
     <?php require ROOT . '/core/templates/form.tpl.php'; ?>
-    <?php if (isset($text_output)) print $text_output; ?>
 </main>
 </body>
 </html>

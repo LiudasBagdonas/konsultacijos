@@ -17,10 +17,14 @@ function nav()
                     'value' => 'My Stuff',
                     'path' => '/admin/myStuff.php'
                 ],
+                'chart' => [
+                    'value' => 'My Order',
+                    'path' => '/chart.php'
+                ],
                 'logout' => [
                     'value' => 'Log Out',
                     'path' => '/logout.php',
-                    'user' => $_SESSION['user']
+                    'user' => $_SESSION['name']
                 ],
             ],
         ];
@@ -48,14 +52,63 @@ function nav()
     }
 }
 
-function count_my_items() {
+function count_my_items()
+{
     $db_data = file_to_array(DB_FILE);
-    $count = 0;
+    $my_items = [];
 
-    foreach($db_data['items'] as $item) {
-        if(isset($item['id']) && $item['id'] === $_SESSION['email']) {
-            $count ++;
+    if (isset($db_data['items'])) {
+        foreach ($db_data['items'] as $item) {
+            if (isset($item['user']) && $item['user'] === $_SESSION['email']) {
+                $my_items[] = $item;
+            }
         }
     }
-    return $count;
+    return $my_items;
 }
+
+function not_my_items()
+{
+    $db_data = file_to_array(DB_FILE);
+    $result = [];
+
+    if (isset($db_data['items'])) {
+        foreach ($db_data['items'] as $item) {
+            if (isset($item['user']) && $item['user'] !== $_SESSION['email']) {
+                $result[] = $item;
+            }
+        }
+    }
+    return $result;
+}
+
+function total_price()
+{
+    $db_data = file_to_array(DB_FILE);
+    $result = 0;
+
+    if (isset($db_data['selected'])) {
+        foreach ($db_data['selected'] as $item) {
+            $result += $item['price'];
+        }
+    }
+    return $result;
+}
+
+function selected_items()
+{
+    $db_data = file_to_array(DB_FILE);
+    $result = [];
+
+    if (isset($db_data['credentials'])) {
+        foreach ($db_data['credentials'] as $user_index => $user) {
+            if (isset($user['user_selected']) && $user['email'] === $_SESSION['email']) {
+                foreach ($user['user_selected'] as $selected_item) {
+                    $result[] = $selected_item;
+                }
+            }
+        }
+    }
+    return $result;
+}
+

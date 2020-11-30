@@ -8,7 +8,7 @@ function is_logged_in(): bool
 {
         if ($_SESSION) {
             $db_data = file_to_array(DB_FILE);
-
+if(isset($db_data['credentials']))
             foreach ($db_data['credentials'] as $entry) {
 
                 if ($entry['email'] === $_SESSION['email']

@@ -132,7 +132,7 @@ function validate_email(string $field_value, array &$field): bool
  */
 function validate_number(string $field_value, array &$field): bool
 {
-    if(is_numeric($field_value)){
+    if (is_numeric($field_value)) {
 
         return true;
     }
@@ -145,22 +145,34 @@ function validate_number(string $field_value, array &$field): bool
  * @param array $field
  * @return bool
  */
-function validate_min_6_chars(string $field_value, array &$field): bool
+function validate_max_4_chars(string $field_value, array &$field): bool
 {
-    if (strlen($field_value) >= 6) {
-        return true;
-    }
-    $field['error'] = 'Password must be at least 6 characters long.';
+    if (strlen($field_value) > 4) {
+        $field['error'] = 'Password must be max 4 characters long.';
 
-    return false;
+        return false;
+    }
+
+    return true;
+}
+
+function validate_has_no_number(string $field_value, array &$field): bool
+{
+    if (strpbrk($field_value, '1234567890')) {
+        $field['error'] = 'Username can not consist of numbers';
+
+        return false;
+    }
+
+    return true;
 }
 
 function validate_has_number(string $field_value, array &$field): bool
 {
-    if (preg_match('~[0-9]+~', $field_value)) {
-return true;
+    if (strpbrk($field_value, '1234567890')) {
+        return true;
     }
-    $field['error'] = 'Username must consist at least 1 number';
+    $field['error'] = 'Username must have at least one number';
 
     return false;
 }

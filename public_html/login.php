@@ -28,7 +28,7 @@ $form = [
         ],
         'password' => [
             'label' => 'Password',
-            'type' => 'text',
+            'type' => 'password',
             'validators' => [
                 'validate_field_not_empty',
             ],
@@ -72,7 +72,8 @@ if ($clean_inputs) {
 
         foreach ($input_from_json['credentials'] as $user) {
             if ($_SESSION['email'] === $user['email']) {
-                $_SESSION['user'] = $user['username'];
+                $_SESSION['name'] = $user['name'];
+                $_SESSION['surname'] = $user['surname'];
             }
         }
 

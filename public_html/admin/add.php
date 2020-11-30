@@ -90,7 +90,9 @@ if ($clean_inputs) {
     if ($is_valid) {
 
         $card_id = [
-                'id' => $_SESSION['email']
+            'user' => $_SESSION['email'],
+            'id' => uniqid(),
+            'selected' => false,
         ];
         // Get data from file
         $input_from_json = file_to_array(DB_FILE);
@@ -113,10 +115,12 @@ $nav = nav();
 </head>
 <body>
 <header>
-    <?php require ROOT . './app/templates/nav.php';?>
+    <?php require ROOT . './app/templates/nav.php'; ?>
 </header>
 <main>
-    <?php require ROOT . './core/templates/form.tpl.php';?>
+    <?php require ROOT . './core/templates/form.tpl.php'; ?>
 </main>
 </body>
 </html>
+
+

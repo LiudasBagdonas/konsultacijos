@@ -20,134 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88638f7a-937b-4f97-80f6-b6638e029fe8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public_html/chart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public_html/dbcopy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public_html/pvm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/constants.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-10.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-100.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-101.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-102.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-103.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-104.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-105.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-106.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-107.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-108.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-109.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-11.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-110.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-111.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-112.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-113.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-114.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-115.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-116.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-117.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-118.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-119.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-12.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-120.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-13.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-14.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-15.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-16.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-17.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-18.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-19.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-20.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-21.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-22.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-23.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-24.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-25.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-26.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-27.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-28.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-29.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-30.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-31.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-32.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-33.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-34.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-35.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-36.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-37.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-38.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-39.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-40.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-41.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-42.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-43.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-44.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-45.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-46.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-47.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-48.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-49.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-50.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-51.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-52.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-53.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-54.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-55.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-56.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-57.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-58.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-59.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-60.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-61.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-62.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-63.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-64.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-65.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-66.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-67.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-68.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-69.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-7.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-70.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-71.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-72.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-73.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-74.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-75.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-76.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-77.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-78.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-79.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-8.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-80.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-81.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-82.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-83.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-84.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-85.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-86.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-87.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-88.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-89.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-9.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-90.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-91.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-92.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-93.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-94.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-95.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-96.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-97.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-98.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/img-99.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/statistics.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teams.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/functions/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/functions/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/functions/generators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/functions/generators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/functions/form/validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions/form/validators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/admin/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/admin/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/admin/myStuff.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/admin/myStuff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/media/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/media/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,8 +63,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../www/app/functions/form/validators.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -212,7 +100,14 @@
       <workItem from="1605769216815" duration="27000" />
       <workItem from="1606133265700" duration="8366000" />
       <workItem from="1606200674909" duration="288000" />
-      <workItem from="1606220105360" duration="4451000" />
+      <workItem from="1606220105360" duration="8262000" />
+      <workItem from="1606287265215" duration="26000" />
+      <workItem from="1606306079059" duration="6192000" />
+      <workItem from="1606373639633" duration="86000" />
+      <workItem from="1606392516553" duration="9188000" />
+      <workItem from="1606459986491" duration="528000" />
+      <workItem from="1606479747179" duration="5697000" />
+      <workItem from="1606738127876" duration="11104000" />
     </task>
     <servers />
   </component>
@@ -232,24 +127,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1606200965377">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1606739575291">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606200965377" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605615114412">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606739575291" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606738557063">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605615114412" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/register.php</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606738557063" />
   </component>
 </project>
